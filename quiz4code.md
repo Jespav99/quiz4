@@ -13,9 +13,9 @@ mov DWORD[ebp-8], eax
 mov eax,DWORD[ebp+16]
 mov DWORD[ebp-12], eax
 
-mov eax, [ebp-4]
+mov eax, [ebp-12]
 mov ebx,[ebp-8]
-mov edx, [ebp-12]
+mov edx, [ebp-4]
 lea eax,[ebx+eax]
 lea eax, [edx+eax]
 mov DWORD[ebp-16], eax
